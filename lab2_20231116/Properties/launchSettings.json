@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "lab2_20231116": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7047",
+      "launchBrowser": false
+    }
+  }
+}

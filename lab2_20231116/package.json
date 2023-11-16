@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "azure-functions-core-tools": "^4.0.5455",
+    "nodejs": "^0.0.0"
+  }
+}
