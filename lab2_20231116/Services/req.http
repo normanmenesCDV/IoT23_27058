@@ -1,0 +1,28 @@
+// zaznacz wybrany fragment requseta, Ctrl + Shift + P >Rest Client: Send Request
+POST https://cdvfunctionapp.azurewebsites.net/api/PeopleFn?code=tlBl9bFMHbszLGTo-lQ27RZ8dlMbGOl4ZzegbPd_fVWsAzFuktdoWw== HTTP/1.1
+content-Type: application/json
+
+{
+    "FirstName": "Norman",
+    "LastName": "Menes"
+}
+
+PUT https://cdvfunctionapp.azurewebsites.net/api/PeopleFn?code=tlBl9bFMHbszLGTo-lQ27RZ8dlMbGOl4ZzegbPd_fVWsAzFuktdoWw== HTTP/1.1
+content-Type: application/json
+
+{
+    "Id": 1,
+    "FirstName": "Adam",
+    "LastName": "Nowak"
+}
+
+GET https://cdvfunctionapp.azurewebsites.net/api/PeopleFn?code=tlBl9bFMHbszLGTo-lQ27RZ8dlMbGOl4ZzegbPd_fVWsAzFuktdoWw== HTTP/1.1
+
+{}
+
+DELETE https://cdvfunctionapp.azurewebsites.net/api/PeopleFn?code=tlBl9bFMHbszLGTo-lQ27RZ8dlMbGOl4ZzegbPd_fVWsAzFuktdoWw== HTTP/1.1
+content-Type: application/json
+
+{
+    "Id": 1
+}

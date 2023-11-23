@@ -5,20 +5,23 @@ namespace Lab2.Function
     public class PeopleServices
     {
         private List<Person> people { get; } = new List<Person>();
-        
+
+        private static int autoincrementId = 1;
+
         public Person Add(PersonDTO personDTO)
         {
             var person = new Person
             {
-                Id = 1,
+                Id = autoincrementId,
                 FirstName = personDTO.FirstName,
                 LastName = personDTO.LastName
             };
             people.Add(person);
+            autoincrementId++;
             return person;
-        }    
+        }
 
-        public Person Update (PersonDTO personDTO)
+        public Person Update(PersonDTO personDTO)
         {
             var person = people.First(x => x.Id == personDTO.Id);
             person.FirstName = personDTO.FirstName;
@@ -27,10 +30,11 @@ namespace Lab2.Function
             return person;
         }
 
-        public void Delete(int id)
+        public bool Delete(int id)
         {
             var person = people.First(x => x.Id == id);
             people.Remove(person);
+            return true;
         }
 
         public Person Find(int id)
@@ -42,5 +46,5 @@ namespace Lab2.Function
         {
             return people;
         }
-    }  
+    }
 }
