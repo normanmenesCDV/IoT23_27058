@@ -1,6 +1,6 @@
 namespace Lab2.Klasy
 {
-    public class Person
+    public class PersonClass
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
